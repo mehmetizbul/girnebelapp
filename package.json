@@ -6,8 +6,7 @@
     "platforms": [
       "ios",
       "windows",
-      "browser",
-      "android"
+      "browser"
     ],
     "plugins": {
       "cordova-plugin-battery-status": {},
@@ -26,7 +25,7 @@
     }
   },
   "dependencies": {
-    "cordova-android": "^7.1.0",
+    "cordova-android": "^6.4.0",
     "cordova-browser": "^5.0.1",
     "cordova-ios": "^4.4.0",
     "cordova-plugin-battery-status": "~1.2.4",
