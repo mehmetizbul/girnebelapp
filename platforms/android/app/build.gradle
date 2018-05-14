@@ -171,8 +171,8 @@ android {
       abortOnError false;
     }
 
-    compileSdkVersion cdvCompileSdkVersion
-    buildToolsVersion cdvBuildToolsVersion
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
 
     //This code exists for Crosswalk and other Native APIs.
     //By default, we multiply the existing version code in the Android Manifest by 10 and 
