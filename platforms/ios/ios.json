@@ -9,34 +9,6 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"Battery\"><param name=\"ios-package\" value=\"CDVBattery\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Globalization\"><param name=\"ios-package\" value=\"CDVGlobalization\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Diagnostic\"><param name=\"ios-package\" value=\"Diagnostic\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
@@ -54,22 +26,6 @@
                         },
                         {
                             "xml": "<feature name=\"Diagnostic_Camera\"><param name=\"ios-package\" value=\"Diagnostic_Camera\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<framework src=\"Photos.framework\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<framework src=\"AVFoundation.framework\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<config-file parent=\"NSCameraUsageDescription\" target=\"*-Info.plist\"><string>This app requires camera access to function properly.</string></config-file>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<config-file parent=\"NSPhotoLibraryUsageDescription\" target=\"*-Info.plist\"><string>This app requires photo library access to function properly.</string></config-file>",
                             "count": 1
                         },
                         {
@@ -97,18 +53,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"File\"><param name=\"ios-package\" value=\"CDVFile\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"FileTransfer\"><param name=\"ios-package\" value=\"CDVFileTransfer\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Capture\"><param name=\"ios-package\" value=\"CDVCapture\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Camera\"><param name=\"ios-package\" value=\"CDVCamera\" /></feature>",
                             "count": 1
                         },
@@ -117,11 +61,23 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"File\"><param name=\"ios-package\" value=\"CDVFile\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FileTransfer\"><param name=\"ios-package\" value=\"CDVFileTransfer\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "xml": "<feature name=\"Globalization\"><param name=\"ios-package\" value=\"CDVGlobalization\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Capture\"><param name=\"ios-package\" value=\"CDVCapture\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -129,17 +85,9 @@
             },
             "*-Info.plist": {
                 "parents": {
-                    "NSCameraUsageDescription": [],
-                    "NSPhotoLibraryUsageDescription": [],
                     "NSLocationWhenInUseUsageDescription": [
                         {
                             "xml": "<string>This app requires access to your location when the screen is on and the app is displayed.</string>",
-                            "count": 1
-                        }
-                    ],
-                    "NSMicrophoneUsageDescription": [
-                        {
-                            "xml": "<string>This app requires microphone access to function properly.</string>",
                             "count": 1
                         }
                     ],
@@ -158,6 +106,24 @@
                     "NSBluetoothPeripheralUsageDescription": [
                         {
                             "xml": "<string>This app requires bluetooth access to function properly.</string>",
+                            "count": 1
+                        }
+                    ],
+                    "NSCameraUsageDescription": [
+                        {
+                            "xml": "<string>This app requires camera access to function properly.</string>",
+                            "count": 1
+                        }
+                    ],
+                    "NSPhotoLibraryUsageDescription": [
+                        {
+                            "xml": "<string>This app requires photo library access to function properly.</string>",
+                            "count": 1
+                        }
+                    ],
+                    "NSMicrophoneUsageDescription": [
+                        {
+                            "xml": "<string>This app requires microphone access to function properly.</string>",
                             "count": 1
                         }
                     ],
@@ -190,126 +156,33 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-battery-status": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "cordova-plugin-globalization": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "cordova-plugin-vibration": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.example.hello"
         },
         "cordova.plugins.diagnostic": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "cordova-plugin-media-capture": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+            "PACKAGE_NAME": "com.example.hello"
         },
         "cordova-plugin-camera": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+            "PACKAGE_NAME": "com.example.hello"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.example.hello"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.example.hello"
         },
         "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+            "PACKAGE_NAME": "com.example.hello"
         },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.example.hello"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.example.hello"
         }
     },
     "dependent_plugins": {},
     "modules": [
-        {
-            "id": "cordova-plugin-battery-status.battery",
-            "file": "plugins/cordova-plugin-battery-status/www/battery.js",
-            "pluginId": "cordova-plugin-battery-status",
-            "clobbers": [
-                "navigator.battery"
-            ]
-        },
-        {
-            "id": "cordova-plugin-device.device",
-            "file": "plugins/cordova-plugin-device/www/device.js",
-            "pluginId": "cordova-plugin-device",
-            "clobbers": [
-                "device"
-            ]
-        },
-        {
-            "id": "cordova-plugin-dialogs.notification",
-            "file": "plugins/cordova-plugin-dialogs/www/notification.js",
-            "pluginId": "cordova-plugin-dialogs",
-            "merges": [
-                "navigator.notification"
-            ]
-        },
-        {
-            "id": "cordova-plugin-globalization.GlobalizationError",
-            "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
-            "pluginId": "cordova-plugin-globalization",
-            "clobbers": [
-                "window.GlobalizationError"
-            ]
-        },
-        {
-            "id": "cordova-plugin-globalization.globalization",
-            "file": "plugins/cordova-plugin-globalization/www/globalization.js",
-            "pluginId": "cordova-plugin-globalization",
-            "clobbers": [
-                "navigator.globalization"
-            ]
-        },
-        {
-            "id": "cordova-plugin-inappbrowser.inappbrowser",
-            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-            "pluginId": "cordova-plugin-inappbrowser",
-            "clobbers": [
-                "cordova.InAppBrowser.open",
-                "window.open"
-            ]
-        },
-        {
-            "id": "cordova-plugin-network-information.network",
-            "file": "plugins/cordova-plugin-network-information/www/network.js",
-            "pluginId": "cordova-plugin-network-information",
-            "clobbers": [
-                "navigator.connection",
-                "navigator.network.connection"
-            ]
-        },
-        {
-            "id": "cordova-plugin-network-information.Connection",
-            "file": "plugins/cordova-plugin-network-information/www/Connection.js",
-            "pluginId": "cordova-plugin-network-information",
-            "clobbers": [
-                "Connection"
-            ]
-        },
-        {
-            "id": "cordova-plugin-vibration.notification",
-            "file": "plugins/cordova-plugin-vibration/www/vibration.js",
-            "pluginId": "cordova-plugin-vibration",
-            "merges": [
-                "navigator.notification",
-                "navigator"
-            ]
-        },
         {
             "id": "cordova.plugins.diagnostic.Diagnostic",
             "file": "plugins/cordova.plugins.diagnostic/www/ios/diagnostic.js",
@@ -396,6 +269,38 @@
             "pluginId": "cordova.plugins.diagnostic",
             "merges": [
                 "cordova.plugins.diagnostic.motion"
+            ]
+        },
+        {
+            "id": "cordova-plugin-camera.Camera",
+            "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+            "pluginId": "cordova-plugin-camera",
+            "clobbers": [
+                "Camera"
+            ]
+        },
+        {
+            "id": "cordova-plugin-camera.CameraPopoverOptions",
+            "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+            "pluginId": "cordova-plugin-camera",
+            "clobbers": [
+                "CameraPopoverOptions"
+            ]
+        },
+        {
+            "id": "cordova-plugin-camera.camera",
+            "file": "plugins/cordova-plugin-camera/www/Camera.js",
+            "pluginId": "cordova-plugin-camera",
+            "clobbers": [
+                "navigator.camera"
+            ]
+        },
+        {
+            "id": "cordova-plugin-camera.CameraPopoverHandle",
+            "file": "plugins/cordova-plugin-camera/www/ios/CameraPopoverHandle.js",
+            "pluginId": "cordova-plugin-camera",
+            "clobbers": [
+                "CameraPopoverHandle"
             ]
         },
         {
@@ -588,6 +493,54 @@
             ]
         },
         {
+            "id": "cordova-plugin-geolocation.Coordinates",
+            "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
+            "pluginId": "cordova-plugin-geolocation",
+            "clobbers": [
+                "Coordinates"
+            ]
+        },
+        {
+            "id": "cordova-plugin-geolocation.PositionError",
+            "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+            "pluginId": "cordova-plugin-geolocation",
+            "clobbers": [
+                "PositionError"
+            ]
+        },
+        {
+            "id": "cordova-plugin-geolocation.Position",
+            "file": "plugins/cordova-plugin-geolocation/www/Position.js",
+            "pluginId": "cordova-plugin-geolocation",
+            "clobbers": [
+                "Position"
+            ]
+        },
+        {
+            "id": "cordova-plugin-geolocation.geolocation",
+            "file": "plugins/cordova-plugin-geolocation/www/geolocation.js",
+            "pluginId": "cordova-plugin-geolocation",
+            "clobbers": [
+                "navigator.geolocation"
+            ]
+        },
+        {
+            "id": "cordova-plugin-globalization.GlobalizationError",
+            "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
+            "pluginId": "cordova-plugin-globalization",
+            "clobbers": [
+                "window.GlobalizationError"
+            ]
+        },
+        {
+            "id": "cordova-plugin-globalization.globalization",
+            "file": "plugins/cordova-plugin-globalization/www/globalization.js",
+            "pluginId": "cordova-plugin-globalization",
+            "clobbers": [
+                "navigator.globalization"
+            ]
+        },
+        {
             "id": "cordova-plugin-media-capture.CaptureAudioOptions",
             "file": "plugins/cordova-plugin-media-capture/www/CaptureAudioOptions.js",
             "pluginId": "cordova-plugin-media-capture",
@@ -648,102 +601,16 @@
             "clobbers": [
                 "navigator.device.capture"
             ]
-        },
-        {
-            "id": "cordova-plugin-camera.Camera",
-            "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
-            "pluginId": "cordova-plugin-camera",
-            "clobbers": [
-                "Camera"
-            ]
-        },
-        {
-            "id": "cordova-plugin-camera.CameraPopoverOptions",
-            "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
-            "pluginId": "cordova-plugin-camera",
-            "clobbers": [
-                "CameraPopoverOptions"
-            ]
-        },
-        {
-            "id": "cordova-plugin-camera.camera",
-            "file": "plugins/cordova-plugin-camera/www/Camera.js",
-            "pluginId": "cordova-plugin-camera",
-            "clobbers": [
-                "navigator.camera"
-            ]
-        },
-        {
-            "id": "cordova-plugin-camera.CameraPopoverHandle",
-            "file": "plugins/cordova-plugin-camera/www/ios/CameraPopoverHandle.js",
-            "pluginId": "cordova-plugin-camera",
-            "clobbers": [
-                "CameraPopoverHandle"
-            ]
-        },
-        {
-            "id": "cordova-plugin-geolocation.Coordinates",
-            "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
-            "pluginId": "cordova-plugin-geolocation",
-            "clobbers": [
-                "Coordinates"
-            ]
-        },
-        {
-            "id": "cordova-plugin-geolocation.PositionError",
-            "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
-            "pluginId": "cordova-plugin-geolocation",
-            "clobbers": [
-                "PositionError"
-            ]
-        },
-        {
-            "id": "cordova-plugin-geolocation.Position",
-            "file": "plugins/cordova-plugin-geolocation/www/Position.js",
-            "pluginId": "cordova-plugin-geolocation",
-            "clobbers": [
-                "Position"
-            ]
-        },
-        {
-            "id": "cordova-plugin-geolocation.geolocation",
-            "file": "plugins/cordova-plugin-geolocation/www/geolocation.js",
-            "pluginId": "cordova-plugin-geolocation",
-            "clobbers": [
-                "navigator.geolocation"
-            ]
-        },
-        {
-            "id": "cordova-plugin-console.console",
-            "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
-            "pluginId": "cordova-plugin-console",
-            "clobbers": [
-                "console"
-            ]
-        },
-        {
-            "id": "cordova-plugin-console.logger",
-            "file": "plugins/cordova-plugin-console/www/logger.js",
-            "pluginId": "cordova-plugin-console",
-            "clobbers": [
-                "cordova.logger"
-            ]
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-battery-status": "1.2.5",
-        "cordova-plugin-device": "1.1.7",
-        "cordova-plugin-dialogs": "1.3.4",
-        "cordova-plugin-globalization": "1.0.9",
-        "cordova-plugin-inappbrowser": "1.7.2",
-        "cordova-plugin-network-information": "1.3.4",
-        "cordova-plugin-vibration": "2.1.6",
-        "cordova.plugins.diagnostic": "4.0.3",
+        "cordova-plugin-whitelist": "1.3.3",
+        "cordova.plugins.diagnostic": "4.0.6",
+        "cordova-plugin-camera": "4.0.3",
         "cordova-plugin-file": "6.0.1",
         "cordova-plugin-file-transfer": "1.7.1",
-        "cordova-plugin-media-capture": "3.0.2",
-        "cordova-plugin-camera": "4.0.3",
         "cordova-plugin-geolocation": "4.0.1",
-        "cordova-plugin-console": "1.1.0"
+        "cordova-plugin-globalization": "1.11.0",
+        "cordova-plugin-media-capture": "3.0.2"
     }
 }

@@ -1,120 +1,121 @@
 ﻿cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "id": "cordova-plugin-battery-status.battery",
-        "file": "plugins/cordova-plugin-battery-status/www/battery.js",
-        "pluginId": "cordova-plugin-battery-status",
-        "clobbers": [
-            "navigator.battery"
-        ]
-    },
-    {
-        "id": "cordova-plugin-battery-status.Battery",
-        "file": "plugins/cordova-plugin-battery-status/src/windows/BatteryProxy.js",
-        "pluginId": "cordova-plugin-battery-status",
-        "runs": true
-    },
-    {
-        "id": "cordova-plugin-device.device",
-        "file": "plugins/cordova-plugin-device/www/device.js",
-        "pluginId": "cordova-plugin-device",
-        "clobbers": [
-            "device"
-        ]
-    },
-    {
-        "id": "cordova-plugin-device.DeviceProxy",
-        "file": "plugins/cordova-plugin-device/src/windows/DeviceProxy.js",
-        "pluginId": "cordova-plugin-device",
-        "runs": true
-    },
-    {
-        "id": "cordova-plugin-dialogs.notification",
-        "file": "plugins/cordova-plugin-dialogs/www/notification.js",
-        "pluginId": "cordova-plugin-dialogs",
+        "id": "cordova.plugins.diagnostic.Diagnostic",
+        "file": "plugins/cordova.plugins.diagnostic/www/windows/diagnostic.js",
+        "pluginId": "cordova.plugins.diagnostic",
         "merges": [
-            "navigator.notification"
+            "cordova.plugins.diagnostic"
         ]
     },
     {
-        "id": "cordova-plugin-dialogs.NotificationProxy",
-        "file": "plugins/cordova-plugin-dialogs/src/windows/NotificationProxy.js",
-        "pluginId": "cordova-plugin-dialogs",
-        "runs": true
-    },
-    {
-        "id": "cordova-plugin-globalization.GlobalizationError",
-        "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
-        "pluginId": "cordova-plugin-globalization",
-        "clobbers": [
-            "window.GlobalizationError"
-        ]
-    },
-    {
-        "id": "cordova-plugin-globalization.globalization",
-        "file": "plugins/cordova-plugin-globalization/www/globalization.js",
-        "pluginId": "cordova-plugin-globalization",
-        "clobbers": [
-            "navigator.globalization"
-        ]
-    },
-    {
-        "id": "cordova-plugin-globalization.GlobalizationProxy",
-        "file": "plugins/cordova-plugin-globalization/src/windows/GlobalizationProxy.js",
-        "pluginId": "cordova-plugin-globalization",
-        "runs": true
-    },
-    {
-        "id": "cordova-plugin-inappbrowser.inappbrowser",
-        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-        "pluginId": "cordova-plugin-inappbrowser",
-        "clobbers": [
-            "cordova.InAppBrowser.open",
-            "window.open"
-        ]
-    },
-    {
-        "id": "cordova-plugin-inappbrowser.InAppBrowserProxy",
-        "file": "plugins/cordova-plugin-inappbrowser/src/windows/InAppBrowserProxy.js",
-        "pluginId": "cordova-plugin-inappbrowser",
-        "runs": true
-    },
-    {
-        "id": "cordova-plugin-network-information.network",
-        "file": "plugins/cordova-plugin-network-information/www/network.js",
-        "pluginId": "cordova-plugin-network-information",
-        "clobbers": [
-            "navigator.connection",
-            "navigator.network.connection"
-        ]
-    },
-    {
-        "id": "cordova-plugin-network-information.Connection",
-        "file": "plugins/cordova-plugin-network-information/www/Connection.js",
-        "pluginId": "cordova-plugin-network-information",
-        "clobbers": [
-            "Connection"
-        ]
-    },
-    {
-        "id": "cordova-plugin-network-information.NetworkInfoProxy",
-        "file": "plugins/cordova-plugin-network-information/src/windows/NetworkInfoProxy.js",
-        "pluginId": "cordova-plugin-network-information",
-        "runs": true
-    },
-    {
-        "id": "cordova-plugin-vibration.notification",
-        "file": "plugins/cordova-plugin-vibration/www/vibration.js",
-        "pluginId": "cordova-plugin-vibration",
+        "id": "cordova.plugins.diagnostic.diagnosticProxy",
+        "file": "plugins/cordova.plugins.diagnostic/src/windows/diagnosticProxy.js",
+        "pluginId": "cordova.plugins.diagnostic",
         "merges": [
-            "navigator.notification",
-            "navigator"
+            ""
         ]
     },
     {
-        "id": "cordova-plugin-vibration.VibrationProxy",
-        "file": "plugins/cordova-plugin-vibration/src/windows/VibrationProxy.js",
-        "pluginId": "cordova-plugin-vibration",
+        "id": "cordova.plugins.diagnostic.Diagnostic_Location",
+        "file": "plugins/cordova.plugins.diagnostic/www/windows/diagnostic.location.js",
+        "pluginId": "cordova.plugins.diagnostic",
+        "merges": [
+            "cordova.plugins.diagnostic.location"
+        ]
+    },
+    {
+        "id": "cordova.plugins.diagnostic.diagnosticProxy.location",
+        "file": "plugins/cordova.plugins.diagnostic/src/windows/diagnosticProxy.location.js",
+        "pluginId": "cordova.plugins.diagnostic",
+        "merges": [
+            ""
+        ]
+    },
+    {
+        "id": "cordova.plugins.diagnostic.Diagnostic_Bluetooth",
+        "file": "plugins/cordova.plugins.diagnostic/www/windows/diagnostic.bluetooth.js",
+        "pluginId": "cordova.plugins.diagnostic",
+        "merges": [
+            "cordova.plugins.diagnostic.bluetooth"
+        ]
+    },
+    {
+        "id": "cordova.plugins.diagnostic.diagnosticProxy.bluetooth",
+        "file": "plugins/cordova.plugins.diagnostic/src/windows/diagnosticProxy.bluetooth.js",
+        "pluginId": "cordova.plugins.diagnostic",
+        "merges": [
+            ""
+        ]
+    },
+    {
+        "id": "cordova.plugins.diagnostic.Diagnostic_Wifi",
+        "file": "plugins/cordova.plugins.diagnostic/www/windows/diagnostic.wifi.js",
+        "pluginId": "cordova.plugins.diagnostic",
+        "merges": [
+            "cordova.plugins.diagnostic.wifi"
+        ]
+    },
+    {
+        "id": "cordova.plugins.diagnostic.diagnosticProxy.wifi",
+        "file": "plugins/cordova.plugins.diagnostic/src/windows/diagnosticProxy.wifi.js",
+        "pluginId": "cordova.plugins.diagnostic",
+        "merges": [
+            ""
+        ]
+    },
+    {
+        "id": "cordova.plugins.diagnostic.Diagnostic_Camera",
+        "file": "plugins/cordova.plugins.diagnostic/www/windows/diagnostic.camera.js",
+        "pluginId": "cordova.plugins.diagnostic",
+        "merges": [
+            "cordova.plugins.diagnostic.camera"
+        ]
+    },
+    {
+        "id": "cordova.plugins.diagnostic.diagnosticProxy.camera",
+        "file": "plugins/cordova.plugins.diagnostic/src/windows/diagnosticProxy.camera.js",
+        "pluginId": "cordova.plugins.diagnostic",
+        "merges": [
+            ""
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.Camera",
+        "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "Camera"
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.CameraPopoverOptions",
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "CameraPopoverOptions"
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.camera",
+        "file": "plugins/cordova-plugin-camera/www/Camera.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "navigator.camera"
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.CameraPopoverHandle",
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "CameraPopoverHandle"
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.CameraProxy",
+        "file": "plugins/cordova-plugin-camera/src/windows/CameraProxy.js",
+        "pluginId": "cordova-plugin-camera",
         "runs": true
     },
     {
@@ -305,6 +306,66 @@ module.exports = [
         "runs": true
     },
     {
+        "id": "cordova-plugin-geolocation.GeolocationProxy",
+        "file": "plugins/cordova-plugin-geolocation/src/windows/GeolocationProxy.js",
+        "pluginId": "cordova-plugin-geolocation",
+        "runs": true
+    },
+    {
+        "id": "cordova-plugin-geolocation.Coordinates",
+        "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
+        "pluginId": "cordova-plugin-geolocation",
+        "clobbers": [
+            "Coordinates"
+        ]
+    },
+    {
+        "id": "cordova-plugin-geolocation.PositionError",
+        "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
+        "pluginId": "cordova-plugin-geolocation",
+        "clobbers": [
+            "PositionError"
+        ]
+    },
+    {
+        "id": "cordova-plugin-geolocation.Position",
+        "file": "plugins/cordova-plugin-geolocation/www/Position.js",
+        "pluginId": "cordova-plugin-geolocation",
+        "clobbers": [
+            "Position"
+        ]
+    },
+    {
+        "id": "cordova-plugin-geolocation.geolocation",
+        "file": "plugins/cordova-plugin-geolocation/www/geolocation.js",
+        "pluginId": "cordova-plugin-geolocation",
+        "clobbers": [
+            "navigator.geolocation"
+        ]
+    },
+    {
+        "id": "cordova-plugin-globalization.GlobalizationError",
+        "file": "plugins/cordova-plugin-globalization/www/GlobalizationError.js",
+        "pluginId": "cordova-plugin-globalization",
+        "clobbers": [
+            "window.GlobalizationError"
+        ]
+    },
+    {
+        "id": "cordova-plugin-globalization.globalization",
+        "file": "plugins/cordova-plugin-globalization/www/globalization.js",
+        "pluginId": "cordova-plugin-globalization",
+        "clobbers": [
+            "navigator.globalization"
+        ]
+    },
+    {
+        "id": "cordova-plugin-globalization.GlobalizationProxy",
+        "file": "plugins/cordova-plugin-globalization/src/windows/GlobalizationProxy.js",
+        "pluginId": "cordova-plugin-globalization",
+        "runs": true
+    },
+    {
         "id": "cordova-plugin-media-capture.CaptureAudioOptions",
         "file": "plugins/cordova-plugin-media-capture/www/CaptureAudioOptions.js",
         "pluginId": "cordova-plugin-media-capture",
@@ -379,116 +440,19 @@ module.exports = [
         "file": "plugins/cordova-plugin-media-capture/src/windows/CaptureProxy.js",
         "pluginId": "cordova-plugin-media-capture",
         "runs": true
-    },
-    {
-        "id": "cordova-plugin-camera.Camera",
-        "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
-        "pluginId": "cordova-plugin-camera",
-        "clobbers": [
-            "Camera"
-        ]
-    },
-    {
-        "id": "cordova-plugin-camera.CameraPopoverOptions",
-        "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
-        "pluginId": "cordova-plugin-camera",
-        "clobbers": [
-            "CameraPopoverOptions"
-        ]
-    },
-    {
-        "id": "cordova-plugin-camera.camera",
-        "file": "plugins/cordova-plugin-camera/www/Camera.js",
-        "pluginId": "cordova-plugin-camera",
-        "clobbers": [
-            "navigator.camera"
-        ]
-    },
-    {
-        "id": "cordova-plugin-camera.CameraPopoverHandle",
-        "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
-        "pluginId": "cordova-plugin-camera",
-        "clobbers": [
-            "CameraPopoverHandle"
-        ]
-    },
-    {
-        "id": "cordova-plugin-camera.CameraProxy",
-        "file": "plugins/cordova-plugin-camera/src/windows/CameraProxy.js",
-        "pluginId": "cordova-plugin-camera",
-        "runs": true
-    },
-    {
-        "id": "cordova-plugin-geolocation.GeolocationProxy",
-        "file": "plugins/cordova-plugin-geolocation/src/windows/GeolocationProxy.js",
-        "pluginId": "cordova-plugin-geolocation",
-        "runs": true
-    },
-    {
-        "id": "cordova-plugin-geolocation.Coordinates",
-        "file": "plugins/cordova-plugin-geolocation/www/Coordinates.js",
-        "pluginId": "cordova-plugin-geolocation",
-        "clobbers": [
-            "Coordinates"
-        ]
-    },
-    {
-        "id": "cordova-plugin-geolocation.PositionError",
-        "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
-        "pluginId": "cordova-plugin-geolocation",
-        "clobbers": [
-            "PositionError"
-        ]
-    },
-    {
-        "id": "cordova-plugin-geolocation.Position",
-        "file": "plugins/cordova-plugin-geolocation/www/Position.js",
-        "pluginId": "cordova-plugin-geolocation",
-        "clobbers": [
-            "Position"
-        ]
-    },
-    {
-        "id": "cordova-plugin-geolocation.geolocation",
-        "file": "plugins/cordova-plugin-geolocation/www/geolocation.js",
-        "pluginId": "cordova-plugin-geolocation",
-        "clobbers": [
-            "navigator.geolocation"
-        ]
-    },
-    {
-        "id": "cordova-plugin-console.logger",
-        "file": "plugins/cordova-plugin-console/www/logger.js",
-        "pluginId": "cordova-plugin-console",
-        "clobbers": [
-            "cordova.logger"
-        ]
-    },
-    {
-        "id": "cordova-plugin-console.console",
-        "file": "plugins/cordova-plugin-console/www/console-via-logger.js",
-        "pluginId": "cordova-plugin-console",
-        "clobbers": [
-            "console"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-battery-status": "1.2.5",
-    "cordova-plugin-device": "1.1.7",
-    "cordova-plugin-dialogs": "1.3.4",
-    "cordova-plugin-globalization": "1.0.9",
-    "cordova-plugin-inappbrowser": "1.7.2",
-    "cordova-plugin-network-information": "1.3.4",
-    "cordova-plugin-vibration": "2.1.6",
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova.plugins.diagnostic": "4.0.6",
+    "cordova-plugin-camera": "4.0.3",
     "cordova-plugin-file": "6.0.1",
     "cordova-plugin-file-transfer": "1.7.1",
-    "cordova-plugin-media-capture": "3.0.2",
-    "cordova-plugin-camera": "4.0.3",
     "cordova-plugin-geolocation": "4.0.1",
-    "cordova-plugin-console": "1.1.0"
+    "cordova-plugin-globalization": "1.11.0",
+    "cordova-plugin-media-capture": "3.0.2"
 };
 // BOTTOM OF METADATA
 });

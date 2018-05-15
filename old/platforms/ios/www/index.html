@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com http://code.jquery.com; style-src 'self' 'unsafe-inline' http://code.jquery.com; media-src *">-->
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="themes/belediyeTheme.css" />
+    <link rel="stylesheet"  href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet"  href="css/fotorama.css" />
+
+
+    <title>GB Mobil</title>
+
+
+</head>
+
+<body>
+
+<div data-role="page" data-theme="a" id="mainPage">
+    <div data-role="header">
+        <h1>GB Mobil</h1>
+    </div>
+        <div data-role="content" data-theme="a" id="mainMenu">
+            <div style="text-align: center"><img src="themes/images/logo.png" style="max-height: 40%; max-width: 40%"/></div>
+            <a href="index.html#belediyedenHaberler" data-transition="pop" data-role="button">Belediyeden Haberler</a>
+            <a href="index.html#borcSorgulama" data-transition="pop" data-role="button">Borç Sorgulama</a>
+            <a href="index.html#duyurular" data-transition="pop" data-role="button">Duyurular</a>
+            <a href="index.html#ihaleler" data-transition="pop" data-role="button">İhale İlanları</a>
+            <a href="index.html#sikayetBildirim" data-transition="pop" data-role="button">Şikayet Bildirim</a>
+        </div>
+
+    <div data-role="footer" style="text-align: center">
+        © Girne Belediyesi 2018
+    </div>
+</div>
+
+<div data-role="page" data-theme="a" id="belediyedenHaberler">
+    <div data-role="header">
+        <a href="index.html" data-icon="back">Geri</a>
+        <h1>Haberler</h1>
+    </div>
+
+    <div data-role="content" data-theme="a" id="accordion">
+        <h2>Belediyeden Haberler</h2>
+    </div>
+    <div data-role="footer" style="text-align: center">
+        © Girne Belediyesi 2018
+    </div>
+</div>
+
+<div data-role="page" data-theme="a" id="duyurular">
+    <div data-role="header">
+        <a href="index.html" data-icon="back">Geri</a>
+        <h1>Duyurular</h1>
+    </div>
+
+    <div data-role="content" data-theme="a" id="accordionDuyurular">
+        <h2>Duyurular</h2>
+    </div>
+    <div data-role="footer" style="text-align: center">
+        © Girne Belediyesi 2018
+    </div>
+</div>
+
+<div data-role="page" data-theme="a" id="ihaleler">
+    <div data-role="header">
+        <a href="index.html" data-icon="back">Geri</a>
+        <h1>İhaleler</h1>
+    </div>
+
+    <div data-role="content" data-theme="a" id="accordionIhaleler">
+        <h2>İhale İlanları</h2>
+    </div>
+    <div data-role="footer" style="text-align: center">
+        © Girne Belediyesi 2018
+    </div>
+</div>
+
+<div data-role="page" data-theme="a" id="borcSorgulama">
+    <div data-role="header">
+        <a href="index.html" data-icon="back">Geri</a>
+        <h1>Borç Sorgulama</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+            <h2>Emlak Borcu Sorgulama</h2>
+            <label for="emlakTB">Emlak Abone Numaranızı Giriniz</label>
+            <label for="emlakTB">(TGE ile birlikte toplam 9 haneli)</label>
+            <input type="text" data-clear-btn="true" name="text-3" id="emlakTB" value="TGE"/>
+            <div data-role="content" id="emlakContent" hidden></div>
+            <button id="emlakBT">Sorgula</button>
+        <br>
+        <br>
+
+            <h2>Su Borcu Sorgulama</h2>
+            <label for="suTB">Su Abone Numaranızı Giriniz</label>
+            <label for="suTB">(Müstehlik no, 11 hane olacak şekilde)</label>
+            <input type="text" data-clear-btn="true" name="text-3" id="suTB" value=""/>
+            <div data-role="content" id="suContent" hidden></div>
+            <button id="suBT">Sorgula</button>
+    </div>
+    <div data-role="footer" style="text-align: center">
+        © Girne Belediyesi 2018
+    </div>
+</div>
+
+<div data-role="page" data-theme="a" id="sikayetBildirim">
+    <div data-role="header">
+        <a href="index.html" data-icon="back">Geri</a>
+        <h1>Şikayet Bildirimi</h1>
+    </div>
+    <div data-role="content" data-theme="a">
+    <div class="ui-block-a">
+        <button data-icon="camera" id="cameraBT">Foto</button>
+    </div>
+
+
+    <div style="clear: both;">
+        <div id="images" style="overflow: hidden"></div>
+        <div id="status"></div>
+        <label for="lokasyonFC">Lokasyon Ekleme: <input type="checkbox" data-role="flipswitch" name="lokasyonFC" id="lokasyonFC" data-on-text="Açık" data-off-text="Kapalı" data-wrapper-class="custom-size-flipswitch"></label>
+        <form id="bildirimTipi">
+            <fieldset data-role="controlgroup">
+                <legend>Geri Bildirim Şekli:</legend>
+                <input type="radio" name="radio-choice-v-2" id="emailRB" value="email" data-theme="b">
+                <label for="emailRB">E-mail</label>
+                <input type="radio" name="radio-choice-v-2" id="telefonRB" value="telefon" data-theme="b">
+                <label for="telefonRB">Telefon</label>
+            </fieldset>
+        </form>
+    </div>
+    <div id="contactDiv"></div>
+    <label for="sikayetTA">Şikayet Detayları:</label>
+    <textarea name="sikayetTA" id="sikayetTA"></textarea>
+
+
+        <button id="sikayetGonderBT">Gönder</button>
+    </div>
+    <div data-role="footer" style="text-align: center">
+        © Girne Belediyesi 2018
+    </div>
+</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+
+
+</body>
+
+</html>

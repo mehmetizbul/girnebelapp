@@ -7,44 +7,29 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-battery-status": {
-      "PACKAGE_NAME": "helloworld"
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "HelloWorld"
     },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "helloworld"
-    },
-    "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "helloworld"
-    },
-    "cordova-plugin-globalization": {
-      "PACKAGE_NAME": "helloworld"
-    },
-    "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "helloworld"
-    },
-    "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "helloworld"
-    },
-    "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "helloworld"
-    },
-    "cordova-plugin-file": {
-      "PACKAGE_NAME": "helloworld"
-    },
-    "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "helloworld"
-    },
-    "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "helloworld"
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "HelloWorld"
     },
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "helloworld"
+      "PACKAGE_NAME": "HelloWorld"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "HelloWorld"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "HelloWorld"
     },
     "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "helloworld"
+      "PACKAGE_NAME": "HelloWorld"
     },
-    "cordova-plugin-console": {
-      "PACKAGE_NAME": "helloworld"
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "HelloWorld"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "HelloWorld"
     }
   },
   "dependent_plugins": {}

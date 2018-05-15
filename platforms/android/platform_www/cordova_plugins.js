@@ -1,11 +1,91 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
   {
-    "id": "cordova-plugin-battery-status.battery",
-    "file": "plugins/cordova-plugin-battery-status/www/battery.js",
-    "pluginId": "cordova-plugin-battery-status",
-    "clobbers": [
-      "navigator.battery"
+    "id": "cordova.plugins.diagnostic.Diagnostic",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic_Location",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.location.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic.location"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic_Bluetooth",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.bluetooth.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic.bluetooth"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic_Wifi",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.wifi.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic.wifi"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic_Camera",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.camera.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic.camera"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic_Notifications",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.notifications.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic.notifications"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic_Microphone",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.microphone.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic.microphone"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic_Contacts",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.contacts.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic.contacts"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic_Calendar",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.calendar.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic.calendar"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic_NFC",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.nfc.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic.nfc"
+    ]
+  },
+  {
+    "id": "cordova.plugins.diagnostic.Diagnostic_External_Storage",
+    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.external_storage.js",
+    "pluginId": "cordova.plugins.diagnostic",
+    "merges": [
+      "cordova.plugins.diagnostic.external_storage"
     ]
   },
   {
@@ -38,30 +118,6 @@ module.exports = [
     "pluginId": "cordova-plugin-camera",
     "clobbers": [
       "CameraPopoverHandle"
-    ]
-  },
-  {
-    "id": "cordova-plugin-device.device",
-    "file": "plugins/cordova-plugin-device/www/device.js",
-    "pluginId": "cordova-plugin-device",
-    "clobbers": [
-      "device"
-    ]
-  },
-  {
-    "id": "cordova-plugin-dialogs.notification",
-    "file": "plugins/cordova-plugin-dialogs/www/notification.js",
-    "pluginId": "cordova-plugin-dialogs",
-    "merges": [
-      "navigator.notification"
-    ]
-  },
-  {
-    "id": "cordova-plugin-dialogs.notification_android",
-    "file": "plugins/cordova-plugin-dialogs/www/android/notification.js",
-    "pluginId": "cordova-plugin-dialogs",
-    "merges": [
-      "navigator.notification"
     ]
   },
   {
@@ -284,15 +340,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-inappbrowser.inappbrowser",
-    "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
-    "pluginId": "cordova-plugin-inappbrowser",
-    "clobbers": [
-      "cordova.InAppBrowser.open",
-      "window.open"
-    ]
-  },
-  {
     "id": "cordova-plugin-media-capture.CaptureAudioOptions",
     "file": "plugins/cordova-plugin-media-capture/www/CaptureAudioOptions.js",
     "pluginId": "cordova-plugin-media-capture",
@@ -359,139 +406,19 @@ module.exports = [
     "file": "plugins/cordova-plugin-media-capture/www/android/init.js",
     "pluginId": "cordova-plugin-media-capture",
     "runs": true
-  },
-  {
-    "id": "cordova-plugin-network-information.network",
-    "file": "plugins/cordova-plugin-network-information/www/network.js",
-    "pluginId": "cordova-plugin-network-information",
-    "clobbers": [
-      "navigator.connection",
-      "navigator.network.connection"
-    ]
-  },
-  {
-    "id": "cordova-plugin-network-information.Connection",
-    "file": "plugins/cordova-plugin-network-information/www/Connection.js",
-    "pluginId": "cordova-plugin-network-information",
-    "clobbers": [
-      "Connection"
-    ]
-  },
-  {
-    "id": "cordova-plugin-vibration.notification",
-    "file": "plugins/cordova-plugin-vibration/www/vibration.js",
-    "pluginId": "cordova-plugin-vibration",
-    "merges": [
-      "navigator.notification",
-      "navigator"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Location",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.location.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.location"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Bluetooth",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.bluetooth.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.bluetooth"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Wifi",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.wifi.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.wifi"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Camera",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.camera.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.camera"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Notifications",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.notifications.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.notifications"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Microphone",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.microphone.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.microphone"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Contacts",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.contacts.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.contacts"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Calendar",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.calendar.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.calendar"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_NFC",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.nfc.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.nfc"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_External_Storage",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.external_storage.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.external_storage"
-    ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-  "cordova-plugin-battery-status": "1.2.5",
+  "cordova-plugin-whitelist": "1.3.3",
+  "cordova.plugins.diagnostic": "4.0.6",
   "cordova-plugin-camera": "4.0.3",
-  "cordova-plugin-console": "1.1.0",
-  "cordova-plugin-device": "1.1.7",
-  "cordova-plugin-dialogs": "1.3.4",
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-file-transfer": "1.7.1",
   "cordova-plugin-geolocation": "4.0.1",
-  "cordova-plugin-globalization": "1.0.9",
-  "cordova-plugin-inappbrowser": "1.7.2",
-  "cordova-plugin-media-capture": "3.0.2",
-  "cordova-plugin-network-information": "1.3.4",
-  "cordova-plugin-vibration": "2.1.6",
-  "cordova.plugins.diagnostic": "4.0.3"
+  "cordova-plugin-globalization": "1.11.0",
+  "cordova-plugin-media-capture": "3.0.2"
 };
 // BOTTOM OF METADATA
 });

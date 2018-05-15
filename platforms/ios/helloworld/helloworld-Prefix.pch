@@ -17,7 +17,7 @@
  under the License.
  */
 //
-// Prefix header for all source files of the 'helloworld' target in the 'helloworld' project
+// Prefix header for all source files of the 'HelloWorld' target in the 'HelloWorld' project
 //
 
 #ifdef __OBJC__

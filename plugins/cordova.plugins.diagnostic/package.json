@@ -10,23 +10,23 @@
         "spec": "latest",
         "type": "tag"
       },
-      "C:\\xampp\\htdocs\\belediyeApp"
+      "C:\\xampp\\htdocs\\hello"
     ]
   ],
   "_from": "cordova.plugins.diagnostic@latest",
-  "_id": "cordova.plugins.diagnostic@4.0.3",
+  "_id": "cordova.plugins.diagnostic@4.0.6",
   "_inCache": true,
   "_location": "/cordova.plugins.diagnostic",
-  "_nodeVersion": "7.10.0",
+  "_nodeVersion": "8.11.1",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/cordova.plugins.diagnostic_4.0.3_1520611727975_0.4253411623640324"
+    "tmp": "tmp/cordova.plugins.diagnostic_4.0.6_1526057382711_0.16303698566867753"
   },
   "_npmUser": {
     "name": "davealden",
     "email": "dave@workingedge.co.uk"
   },
-  "_npmVersion": "4.2.0",
+  "_npmVersion": "5.6.0",
   "_phantomChildren": {},
   "_requested": {
     "raw": "cordova.plugins.diagnostic",
@@ -41,11 +41,11 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova.plugins.diagnostic/-/cordova.plugins.diagnostic-4.0.3.tgz",
-  "_shasum": "d0b0f608ea7e0e75350c5498829751ac1847910d",
+  "_resolved": "https://registry.npmjs.org/cordova.plugins.diagnostic/-/cordova.plugins.diagnostic-4.0.6.tgz",
+  "_shasum": "b9ad0df9f9d2550c2d7f2f80540e0eb82ba7e1f5",
   "_shrinkwrap": null,
   "_spec": "cordova.plugins.diagnostic",
-  "_where": "C:\\xampp\\htdocs\\belediyeApp",
+  "_where": "C:\\xampp\\htdocs\\hello",
   "author": {
     "name": "Dave Alden"
   },
@@ -70,12 +70,14 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "d0b0f608ea7e0e75350c5498829751ac1847910d",
-    "tarball": "https://registry.npmjs.org/cordova.plugins.diagnostic/-/cordova.plugins.diagnostic-4.0.3.tgz",
-    "fileCount": 72,
-    "unpackedSize": 646610
+    "integrity": "sha512-XsjPrzs4l8nDrO1UQ/M4IykRvG3dbP3PqLULqzjpMnvUpxM5na5OKIrjBbe+d3FO0ZLV7sDQq0sKFKaAiByT3w==",
+    "shasum": "b9ad0df9f9d2550c2d7f2f80540e0eb82ba7e1f5",
+    "tarball": "https://registry.npmjs.org/cordova.plugins.diagnostic/-/cordova.plugins.diagnostic-4.0.6.tgz",
+    "fileCount": 71,
+    "unpackedSize": 650931,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa9cmpCRA9TVsSAnZWagAAyxAQAJ2wy+Hief0h2wT+Qqjc\nWTYKo0X+c3ptPyhQ/I/CKW1eXnvaKc/iRR1xVKsLN3bFwj3kSM4pYrHJ+uBG\nqFpVX9rYT2He4evXqkP4rVIxVEjhRUgfj3yzxeVNcvJD1bA1Z6cNABSSJEfb\nGqAv1R6ftuzHV2ufVEKVoMCB+j8g9mU6fVOXaVpTnBXAYndEmMuFj00IYAQP\ncVxoPwJy8qMebblGb8hp6CNFEyvgp2YQrkqXvNAYvUAYINzv0qlFjgleElmR\nraHCVxNKsL3DCjZrOYXkxFRI/CEb8M8BC9bPtDG61KA0mvi7Qfew7SMAwuld\n8km/dbG72unI7GzKbLImDn6hrIGtTxSNkBfIhpZPlSYhvFrE7HJYbQAuXdFo\n+YJcuz6DbbdxRWyfkAV1xR2vUJ7s3H8/wSptAYtWmW9eunhmDPlL2LMXJ/y4\n/ApL3ZE2Cpo8HonvjvlpE4usj5755YQDMZmy+/BA09xjL2l7eQc7UXJz8vha\nSp9wfGBfYrXncOKGiDgHiDe5zx2EBVHtQYZAj+ms4eijs/LsA26hLPNb2aRO\nZtt29tHt/BlLNMfCrFTxmSxndoXjpmx7Xktrk7jtlAhpUtgtoYcN0fJ7zMaZ\neph37VvesIizZg1B3d0grG9hFpI3LZAEzpQNxMAc4TDmFr/dplfCNNxoktsC\n4V8a\r\n=uBZ5\r\n-----END PGP SIGNATURE-----\r\n"
   },
-  "gitHead": "3e97992113c4f6bd32d2855a75ba09ea8fcf88b5",
+  "gitHead": "18031cbf5d603d3626632a832b65ffba556e59d3",
   "homepage": "https://github.com/dpa99c/cordova-diagnostic-plugin#readme",
   "issue": "https://github.com/dpa99c/cordova-diagnostic-plugin/issues",
   "keywords": [
@@ -111,5 +113,5 @@
     "postinstall": "node ./scripts/apply-modules.js"
   },
   "types": "./cordova.plugins.diagnostic.d.ts",
-  "version": "4.0.3"
+  "version": "4.0.6"
 }
