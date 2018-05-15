@@ -23,10 +23,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="ios" spec="~4.5.4" />
-    <engine name="android" spec="~7.0.0" />
-    <engine name="browser" spec="~5.0.3" />
-    <engine name="windows" spec="~5.0.0" />
     <plugin name="cordova.plugins.diagnostic" spec="^4.0.6" />
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />
     <plugin name="cordova-plugin-file" spec="^6.0.1" />
@@ -34,4 +30,8 @@
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
     <plugin name="cordova-plugin-globalization" spec="^1.11.0" />
     <plugin name="cordova-plugin-media-capture" spec="^3.0.2" />
+    <engine name="ios" spec="^4.5.4" />
+    <engine name="android" spec="^7.0.0" />
+    <engine name="browser" spec="^5.0.3" />
+    <engine name="windows" spec="^5.0.0" />
 </widget>
