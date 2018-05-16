@@ -162,8 +162,9 @@ android {
         versionCode cdvVersionCode ?: new BigInteger("" + privateHelpers.extractIntFromManifest("versionCode"))
         applicationId privateHelpers.extractStringFromManifest("package")
 
-        minSdkVersion 16
-
+        if (cdvMinSdkVersion != null) {
+            minSdkVersion cdvMinSdkVersion
+        }
     }
 
     lintOptions {
@@ -258,9 +259,9 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
+    compile "com.android.support:support-v4:24.1.1+"
     compile "com.android.support:support-v4:26.+"
     compile "com.android.support:appcompat-v7:26.+"
-    compile "com.android.support:support-v4:24.1.1+"
     // SUB-PROJECT DEPENDENCIES END
 }
 
